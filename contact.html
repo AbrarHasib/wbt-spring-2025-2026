@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="contactsheet" href="contact.css">
+</head>
+
+<body>
+    <h1>Contact Me</h1>
+   
+
+    <!-- Registration Form with Table -->
+    <form method="post">
+
+        <fieldset>
+            <legend>Registration Form</legend>
+
+            <table>
+
+                <tr>
+                    <td><label for="fname">First Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+
+
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female" required> Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Reason of Contact:</label></td>
+                    <td>
+                        <input type="radio" name="reason of contact" value="projects" required> Projects
+                        <input type="radio" name="reason of contact" value="thesis"> Thesis
+                        <input type="radio" name="reason of contact" value="job"> Job
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><label>Topics:</label></td>
+                    <td>
+                        <input type="checkbox" value="web development" required> Web Development
+                        <input type="checkbox" value="mobile development"> Mobile Development
+                        <input type="checkbox" value="ai/ml development"> AI/ML Development
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="start">Consultation Date:</label></td>
+                    <td><input type="date" id="start" name="Consultation-date" required ></td>
+                </tr>
+
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset">
+                    </td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+    </form>
+
+    
+
+    <a href="file:///C:/Users/Hasib/Desktop/Developer/wbt-spring-2025-2026/index.html">Back to Home</a>
+</body>
+
+</html>
