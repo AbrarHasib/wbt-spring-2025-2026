@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Question 3: Community Age Check</title>
+
+<style>
+.red{
+color:red;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Community Membership</h2>
+
+Enter Age:
+<input type="number" id="age">
+
+<p id="message"></p>
+
+<script>
+
+const ageInput = document.getElementById("age");
+const message = document.getElementById("message");
+
+ageInput.addEventListener("input", function(){
+
+let age = ageInput.value;
+
+if(age < 40){
+
+message.textContent="To be a part of the community, you need to at least 40";
+message.classList.remove("red");
+
+}
+
+else if(age >=40 && age <=50){
+
+message.textContent="You are the youngsters of this community";
+message.classList.remove("red");
+
+}
+
+else if(age >50){
+
+message.textContent="Top level members of the group";
+message.classList.add("red");
+
+}
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 1</title>
+
+<style>
+
+.error{
+color:red;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Form Validation</h2>
+
+<form id="form">
+
+First Name<br>
+<input type="text" id="first"><br>
+<div id="firstError" class="error">
+
+</div>
+<br>
+
+Last Name<br>
+<input type="text" id="last"><br>
+<div id="lastError" class="error">
+
+</div>
+<br>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+<script>
+
+const form = document.getElementById("form");
+const first = document.getElementById("first");
+const last = document.getElementById("last");
+
+const firstError = document.getElementById("firstError");
+const lastError = document.getElementById("lastError");
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+firstError.textContent="";
+lastError.textContent="";
+
+let valid=true;
+
+if(first.value.trim()=="" || first.value.length<2){
+firstError.textContent="First name must be at least 2 characters";
+valid=false;
+}
+
+if(last.value.trim()=="" || last.value.length<2){
+lastError.textContent="Last name must be at least 2 characters";
+valid=false;
+}
+
+if(valid){
+alert("Form submitted successfully");
+first.value="";
+last.value="";
+
+}
+
+}
+);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Question 2 upper case</title>
+</head>
+
+<body>
+
+<h2>Enter Your Username </h2>
+
+Username:
+<input type="text" id="username">
+
+<script>
+
+const username = document.getElementById("username");
+
+username.addEventListener("input", function(){
+
+this.value = this.value.toUpperCase();
+
+});
+
+</script>
+
+</body>
+</html>
