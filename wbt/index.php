@@ -19,7 +19,6 @@
     echo "<br>";
     echo "The perimeter of the rectangle is: " . (2 * ($length + $width));
     echo "<br>";
-    echo "bruh";
     $price = 100;
     echo "Value Added Tax (VAT) is: " . ($price * 0.15);
     echo "<br>";
@@ -69,6 +68,7 @@ for ($i = 10; $i <= 100; $i++) {
         
     }
     echo "<br>";
+    echo "<br>";
     
 echo "Question 7";
 echo "<br>";
@@ -102,6 +102,7 @@ for ($i = 1; $i <= 3; $i++) {
     }
     echo "<br>";
 }
+
 
 
     ?>
